@@ -5,3 +5,11 @@ body {
   font-family: cursive;
   overflow-x: hidden;
 }
+
+.input-box {
+  @apply w-full flex justify-center gap-3 text-sm  text-black/80 bg-gray-100 rounded px-4 py-2.5 mb-5 mt-1 border border-slate-200 outline-none
+}
+
+.btn-primary {
+  @apply w-full text-sm font-medium text-white bg-[#006d6fe8] shadow-lg shadow-purple-600/5 p-[10px] hover:bg-[#006D6F] rounded-md my-1  hover:text-gray-200 transition-colors duration-200 cursor-pointer
+}
