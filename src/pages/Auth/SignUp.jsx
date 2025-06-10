@@ -15,7 +15,26 @@ const SignUp = () => {
   const navigate = useNavigate()
 
 
-  const handleSignup = async () => {
+  const handleSignup = async (e) => {
+    e.preventDefault();
+
+    let profileImageUrl = "";
+
+    if(!fullName) {
+      setError("please enter your name")
+      return ;
+    }
+
+    if(!validateEmail(email)) {
+      setError("please enter a valid email address")
+      return;
+    }
+    if(!password) {
+      setError("please enter the password")
+      return
+    }
+
+    setError("")
 
   }
   return (
